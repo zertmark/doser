@@ -3,7 +3,7 @@ Simple doser on Python 3
 # INSTALL:                                                  
 git clone https://github.com/zertmark/doser.git && cd doser && chmod +x doser                    
 # RUN:
-./doser -h
+./doser -h                                                    
 usage: router.py [-h] [-t THREADS] [-c CONNECTIONS] [-p PORT] host                                        
 
 Simple Dos                                        
