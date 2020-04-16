@@ -1,10 +1,21 @@
+#!/bin/python3 
 import sys
 import threading
 import os
 import socket
 import argparse
+banner="""
+                  ▄▄  ▄▄▄▄▄▄▄▄                                ▄▄        ▄▄
+       ██        ██   ▀▀▀▀▀███                        ██       █▄        █▄
+      ██        ██        ██▀    ▄████▄    ██▄████  ███████     █▄        █▄
+     ██        ██       ▄██▀    ██▄▄▄▄██   ██▀        ██         █▄        █▄
+    ▄█▀       ▄█▀      ▄██      ██▀▀▀▀▀▀   ██         ██          █▄        █
+   ▄█▀       ▄█▀      ███▄▄▄▄▄  ▀██▄▄▄▄█   ██         ██▄▄▄        █▄        █▄
+  ▄█▀       ▄█▀       ▀▀▀▀▀▀▀▀    ▀▀▀▀▀    ▀▀          ▀▀▀▀         █▄        █▄
+ """
 def parse_arguments():
- global host,threads,connections,port 
+ global host,threads,connections,port
+ print(banner)
  parser = argparse.ArgumentParser(description="Simple Dos")
  parser.add_argument("host", help="Host to dos")
  parser.add_argument("-t",'--threads', help="Number of threads per second")
